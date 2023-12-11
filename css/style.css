@@ -87,6 +87,9 @@
     display: block !important;
     cursor: pointer;
   }
+  header .close {
+    display: block !important;
+  }
   .services__cards {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -862,6 +865,11 @@ header .data .container .content nav .btn {
 header .data .container .content nav #toggleBtn {
   display: none;
   font-size: 30px;
+}
+header .data .container .content nav .close {
+  display: none;
+  position: relative;
+  right: 10px;
 }
 header .header__content {
   margin-top: 178px;

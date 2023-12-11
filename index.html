@@ -23,9 +23,34 @@
   </noscript>
 
   <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./js/slick.min.js" defer></script>
-  <script src="./js/script.js"></script>
+  <script>
+    function loadDeferredJS() {
+      var script = document.createElement('script');
+      script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+      document.head.appendChild(script);
+    }
+    window.onload = loadDeferredJS;
+  </script>
+
+  <!-- Slick JS: Defer loading -->
+  <script>
+    function loadSlickJS() {
+      var script = document.createElement('script');
+      script.src = './js/slick.min.js'; // Adjust the path if needed
+      document.head.appendChild(script);
+    }
+    window.onload = loadSlickJS;
+  </script>
+
+  <!-- Defer Non-Critical JavaScript -->
+  <script>
+    function loadNonCriticalJS() {
+      var script = document.createElement('script');
+      script.src = './js/script.js'; // GitHub Utility 1st Party
+      document.head.appendChild(script);
+    }
+    window.onload = loadNonCriticalJS;
+  </script>
   <title>Document</title>
 
 
@@ -93,7 +118,7 @@
             <div class="horizontal__list  display__flex">
               <!-- Navigation links -->
               <ul class="nav__list display__flex">
-                <button class="close" onclick="closeForm()"   style="display: none;">X</button>
+               <li> <button class="close" onclick="closeForm()">X</button></li>
                 <li><a href="#">Home</a>
                   <ul class="submenu">
                     <li><a href="#">Mission</a></li>
