@@ -10,22 +10,17 @@
   <link rel="stylesheet" href="./css/style.css" type="text/css" as="style" crossorigin="anonymous"
     integrity="your-integrity-hash">
 
+  
   <!-- Other CSS Files -->
   <link rel="stylesheet" href="./css/slick-theme.css">
   <link rel="preload" href="./fonts/slick.woff" as="font" type="font/woff2" crossorigin="anonymous">
 
   <link rel="preload" href="./fonts/Roboto/Roboto-Regular.ttf" as="font" type="font/woff2" crossorigin="anonymous">
-
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  </noscript>
-
+<link rel="preload"   href="./images/BannerImage.webp"  as="image">
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./js/slick.min.js" defer></script>
-  <script src="./js/script.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/script.js"  defer></script>
   <title>Document</title>
 
 
@@ -134,7 +129,9 @@
             </a>
 
             <!-- ham burger menu -->
-            <i class="fa-solid fa-bars" id="toggleBtn"></i>
+          <div class="bars" id="toggleBtn">
+            <img src="./images/bars.WEBP" alt="hamburger"  width="48" height="48">
+          </div>
           </nav>
           <!-- header content placed at bottom -->
           <div class="header__content  display__flex">
@@ -208,10 +205,12 @@
           <!-- map -->
           <img src="./images/map.webp" alt="map image" width="480" height="579" loading="lazy">
 
-          <div class="loader">
-            <div class="image-container">
-              <img src="./images/heartimage.webp" alt="">
-            </div>
+          <!--circular animation-->
+          <div class="circle__image">
+            <!--<div class="custom-loader-wrapper">-->
+              <div class="custom__animation">
+              </div>
+            <!--</div>-->
           </div>
           
           <div class="state state-1">
