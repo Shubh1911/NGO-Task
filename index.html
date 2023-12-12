@@ -13,6 +13,7 @@
   
   <!-- Other CSS Files -->
   <link rel="stylesheet" href="./css/slick-theme.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preload" href="./fonts/slick.woff" as="font" type="font/woff2" crossorigin="anonymous">
 
   <link rel="preload" href="./fonts/Roboto/Roboto-Regular.ttf" as="font" type="font/woff2" crossorigin="anonymous">
@@ -157,7 +158,7 @@
 
 
   <!-- services section starts from here -->
-  <section class="services">
+  <section class="services"  data-aos="fade-up">
     <div class="container">
       <!-- cards -->
       <div class="services__cards  display__flex">
@@ -201,7 +202,7 @@
       <div class="about__us--section  display__flex">
 
         <!-- left side  -->
-        <div class="about__us--section--left  width">
+        <div class="about__us--section--left  width"  data-aos="fade-right">
           <!-- map -->
           <img src="./images/map.webp" alt="map image" width="480" height="579" loading="lazy">
 
@@ -271,7 +272,7 @@
 
         </div>
         <!-- right side  -->
-        <div class="about__us--section--right  width display__flex">
+        <div class="about__us--section--right  width display__flex" data-aos="fade-left">
 
 
           <div class="dot__line display__flex">
@@ -355,7 +356,7 @@
   <!-- contact form ends  -->
 
   <!-- supportes section starts from here -->
-  <section class="our-Supporters">
+  <section class="our-Supporters"  data-aos="fade-down">
     <div class="container">
       <div class="our-Supporters--div-top">
         <p>our Supporters</p>
@@ -546,7 +547,7 @@
 
           <div class="latest__blog--div--content--cards width  display__flex">
 
-            <div class="latest__blog--div--content--cards--card  width">
+            <div class="latest__blog--div--content--cards--card  width" data-aos="flip-left">
               <img src="./images/blogimage.webp" alt="img1" width="411" height="410"  loading="lazy">
               <div class="card--text">
                 <div class="date">
@@ -573,7 +574,7 @@
               </div>
 
             </div>
-            <div class="latest__blog--div--content--cards--card  width">
+            <div class="latest__blog--div--content--cards--card  width"  data-aos="flip-left">
               <img src="./images/blogimage2.webp" alt="img2" width="411" height="410" loading="lazy">
               <div class="card--text">
                 <div class="date">
@@ -600,7 +601,7 @@
               </div>
 
             </div>
-            <div class="latest__blog--div--content--cards--card  width">
+            <div class="latest__blog--div--content--cards--card  width"  data-aos="flip-left">
               <img src="./images/blogimage3.webp" alt="img3" width="411" height="410" loading="lazy">
               <div class="card--text">
                 <div class="date">
@@ -834,6 +835,11 @@
   </footer>
 
   <!-- footer ends here  -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

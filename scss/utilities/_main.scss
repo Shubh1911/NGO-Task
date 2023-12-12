@@ -517,15 +517,20 @@ background: var(--foundation-secondary-yellow-50, #FCF5E8);
     margin: 77px 0px 67px 0px;
 .testimonial__div{
     background-image: url('../images/worldmap.webp');
+
     &--content{
 align-items: center;
+border-radius: 0px 24px;
 border: 1px solid orange;
 margin-top: 100px;
 
     .center__div{
+        border-radius: 0px 20px;
+box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.10);
+        background-color: $white_color;
         position: relative;
-        top: -20px;
-        border: 1px solid gray;
+        top: -45px;
+        
         padding: 100px;
         &--img{
          border-right: 1px solid gray;

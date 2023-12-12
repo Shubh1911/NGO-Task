@@ -3,8 +3,9 @@
 @use '../abstracts/variables' as * ;
 .contact-button {
     position: fixed;
-    bottom: 70px;
-    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
     display: none;
     z-index: 9999;
     border: none;
