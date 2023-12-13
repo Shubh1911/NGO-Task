@@ -1190,7 +1190,7 @@ header .header__content .right__div--content p {
   right: 0;
   top: 22px;
   color: #000;
-  background: #fff;
+  background: gray;
   position: absolute;
 }
 .events__cards {
